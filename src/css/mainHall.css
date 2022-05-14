@@ -1,0 +1,121 @@
+:root {
+    --Cmain:#f3f2f2;
+    --Cmain:#4b4b4b;
+    --CfooterMain:#626262;
+    --CmainDarker: #4b4b4b;
+
+    --BGmain:#5e7bbe;
+    --BGmain:#d5ddf0;
+    --BGmain:#d1d7eb;
+
+    --BGform:rgb(245, 248, 248);
+    --BGform:rgb(245, 248, 248);
+    --BCform:rgb(200, 213, 219);
+
+    --BGfooter: #c9d0e0;
+    --BGfooter: #cbd2e9;
+}
+
+.mainHall {
+    display: none;
+    position: relative;
+    background: var(--BGmain);
+    /* background:  */
+    height: 100vh;
+}
+
+
+.enterDataBox {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    color: var(--Cmain);
+    text-align: center;
+    font-family: var(--Fsora);
+}
+
+/* /////////FORM PART//////////// */
+
+.formQuiz {
+    background: var(--BGform);
+
+    border: 1px solid var(--BCform);
+    border-radius: 0.8rem;
+    padding: 25px 20px;
+}
+
+
+.inpEnterQ {
+    background: rgb(255, 255, 255);
+    padding: 7px 5px;
+
+    border: 2px solid rgb(199, 198, 198);
+    
+    border-radius: 0.5rem;
+    
+    font-family: var(--Fsora);
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+}
+
+.QuizFirstName {
+    margin-right: 2px;
+}
+
+.QuizKeyWord {
+    width: 100%;
+    margin-top: 15px;
+
+    text-align: center;
+}
+
+.joinUser {
+    width: 40%;
+    margin-top: 15px;
+    padding: 10px 5px;
+    padding-bottom: calc(10px + 2px);
+
+    background: rgb(109, 118, 126);
+    border: 2px solid rgb(111, 110, 114);
+    border-radius: 0.5rem;
+    
+    font-family: var(--Fsora);
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(240, 240, 240);
+
+    cursor: pointer;
+
+    /* transition: 100ms; */
+}
+
+.joinUser:hover {
+
+    padding-bottom: calc(10px);
+    margin-top: calc(15px + 2px);
+
+}
+
+
+
+/* ///////FOOTER/////// */
+
+.hallFooter {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-top: 20px;
+
+    background: #4868b4;
+    background: var(--BGfooter);
+
+    color: var(--CfooterMain);
+}
+
+.hallFooter a, .hallFooter span {
+    color: var(--CmainDarker);
+}

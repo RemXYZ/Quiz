@@ -1,0 +1,104 @@
+@media screen and (max-width: 1500px) {
+
+    :root {
+        /* //////header/////// */
+        --FSheader: 30px;
+
+        /* /////header end/// */
+
+        --goBtnW:135px;
+        --goBtnH:50px;
+    }
+    
+    /* /////////////////// */
+    /* //////header/////// */
+    /* /////////////////// */
+
+
+    /* /////////////////// */
+    /* /////header end/// */
+    /* /////////////////// */
+
+    /* //////////////////////// */
+    /* ////////answers///////// */
+    /* //////////////////////// */
+
+    .answer {
+        font-size: 34px;
+    }
+
+    .answerCircle {
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+        line-height: 1.8;
+    }
+
+    .goNextBtn {
+        width: var(--goBtnW);
+        height: var(--goBtnH);
+        font-size: 30px;
+    }
+
+    .goNextBtn:hover {
+        width: calc(var(--goBtnW) + 4px);
+        height: calc(var(--goBtnH) + 4px);
+    }
+
+    /* //////////////////////// */
+    /* ////////answers end////// */
+    /* //////////////////////// */
+}
+
+
+@media screen and (max-width: 1280px) {
+
+    :root {
+        /* //////header/////// */
+        --FSheader: 30px;
+
+        /* /////header end/// */
+
+        --goBtnW:140px;
+        --goBtnH:50px;
+    }
+    
+    /* /////////////////// */
+    /* //////header/////// */
+    /* /////////////////// */
+
+
+    /* /////////////////// */
+    /* /////header end/// */
+    /* /////////////////// */
+
+    /* //////////////////////// */
+    /* ////////answers///////// */
+    /* //////////////////////// */
+
+    .answer {
+        font-size: 34px;
+    }
+
+    .answerCircle {
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+        line-height: 1.8;
+    }
+
+    .goNextBtn {
+        width: var(--goBtnW);
+        height: var(--goBtnH);
+        font-size: 32px;
+    }
+
+    .goNextBtn:hover {
+        width: calc(var(--goBtnW) + 4px);
+        height: calc(var(--goBtnH) + 4px);
+    }
+
+    /* //////////////////////// */
+    /* ////////answers end////// */
+    /* //////////////////////// */
+}

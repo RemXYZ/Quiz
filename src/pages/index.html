@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzQuiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Paytone+One&family=Secular+One&family=Sora:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/pages/portugalia_project/src/css/mainHall.css">
+    <link rel="stylesheet" href="./src/pages/portugalia_project/src/css/waitingRoom.css">
+    <link rel="stylesheet" href="./src/pages/portugalia_project/src/css/resultRoom.css">
+    <link rel="stylesheet" href="./src/pages/portugalia_project/src/css/authorReview.css">
+    <link rel="stylesheet" href="./src/pages/portugalia_project/src/css/style.css">
+    <link rel="stylesheet" href="./src/pages/portugalia_project/src/css/mediaStyle.css">
+
+    <script src="./src/pages/portugalia_project/src/resources/asajs/asa.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./src/pages/portugalia_project/src/resources/asajs/asaPlugin.js"></script>
+
+    <link rel="icon" type="image/png" size="32x32" href="./src/pages/portugalia_project/src/imgs/icons/WebSiteIcon.png">
+</head>
+<body>
+
+<!-- 
+/////////////////////////////////////////////
+///////////MAIN HALL//////////////////////
+///////////////////////////////////////////// 
+-->
+
+<div class="mainHall">
+
+    <div class="enterDataBox">
+        <h1 class="enterHeader">AzQuiz</h1><br>
+        <div class="formQuiz">
+            <input type="text" class="inpEnterQ inpName QuizFirstName" placeholder="Imię">
+            <input type="text" class="inpEnterQ inpName QuizLastName" placeholder="Nazwisko"><br>
+            <input type="text" class="inpEnterQ QuizKeyWord" placeholder="Klucz"><br>
+            <button class="joinUser">Wprowadź</button>
+        </div>
+
+    </div>
+
+    <footer class="hallFooter">
+        <p>© <a href="https://azixon.com/#about">RemXYZ</a>  2022 </p>
+    </footer>
+
+</div>
+
+<!-- 
+/////////////////////////////////////////////
+///////////WAITING ROOM//////////////////////
+///////////////////////////////////////////// 
+-->
+
+<div class="waitingRoom">
+
+    <header class="waitingRoomH">
+        <h2 class="waitingRoomH_text">Poczekalnia</h2>
+    </header>
+
+    <div class="waitingRoomContent">
+        <div class="waitingRoomGames">
+            
+        </div>
+
+        <div class="waitingRoomContentBox">
+            <div class="waitingRoomTimer">
+                5:00
+            </div>
+            <div class="waitingRoomStartBtn">
+                <div class="wRSB_Circle">
+                    <div class="wRSB_Circle2">
+                        <p>Start</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="waitingRoomMemberNum">
+                <span class="currentMemberNum"></span>
+                <span class="maxMemberNum"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="wRoomFooter">
+        <p>© <a href="https://azixon.com/#about">RemXYZ</a>  2022 </p>
+    </footer>
+</div>
+
+<!-- 
+/////////////////////////////////////////////
+//////////////AUTHOR REVIEW//////////////////
+///////////////////////////////////////////// 
+-->
+
+<div class="authorReview">
+    <ul class="authorReviewList">
+        <li>Rem</li>
+        <li>Rem</li>
+    </ul>
+</div>
+
+<!-- 
+/////////////////////////////////////////////
+///////////QUIZ TEST//////////////////////
+///////////////////////////////////////////// 
+-->
+
+<div class="root">
+    <header class="testsHeader">
+        <h2 class="testsH">Skontaktuj się z administratorem</h2>
+    </header>
+    <div class="tests_imageBox">
+        <div class="tests_timeBox">
+            <div class="tests_timer">30:00</div>
+        </div>
+        <div class="testsImageFrame">
+            <img class="testsImage" src="./" alt="earth">
+        </div>
+        <div class="tests_numberBox">
+            <div class="tests_number">
+                <div class="currentQuestion">1/15</div>
+                <hr>
+                <table class="questionSelectorTable">
+                    <tbody class="questionSelector">
+                        <!-- <tr>
+                            <td class="firstQuestionOption">01</td>
+                            <td class="firstQuestionOption">02</td>
+                        </tr> -->
+                    <!-- <tr class="questionOptionRow">
+                        <td class="questionOption">03</td>
+                        <td class="questionOption">04</td>
+                    </tr> -->
+                    </tbody>
+                </table>
+                <span class="openQuestionSelector openQuestionSelectorDown"></span>
+            </div>
+        </div>
+    </div>
+    <main>
+        
+        <div class="answersBox">
+            <div class="goNext">
+                <div class="goNextWrapper">
+                    <button class="goNextBtn">Dalej</button>
+                </div>
+            </div>
+            <div class="answer answerL">No question <span class="answerCircle">1</span></div>
+            <div class="answer answerR"><span class="answerCircle">2</span> No question</div>
+            <div class="answer answerL">No question <span class="answerCircle">4</span></div>
+            <div class="answer answerR"><span class="answerCircle">3</span>No question </div>
+        </div>
+    </main>
+    <footer class="quizFooter">
+        <div class="footer_content">
+            <p>Zdjęcia i testy należą do ich autorów i właścicieli</p>
+            <p>© <a href="https://azixon.com/#about">RemXYZ</a>  2022 | <span style="text-decoration: underline; cursor:pointer" class="authorReviewBtn">Autorzy</span></p>
+        </div>
+    </footer>
+</div>
+
+
+<div class="resultRoom">
+    <div class="resultFrame">
+        <div class="fullPoints"></div>
+        <div class="logoutBtn"></div>
+    </div>
+</div>
+
+<!-- SCRIPT CONF -->
+<script>
+    const urlRoot = "./src/pages/portugalia_project";
+</script>
+
+<!-- SCRIPT PART -->
+<script src="./src/pages/portugalia_project/src/scriptsJS/testResult.js"></script>
+<script src="./src/pages/portugalia_project/src/scriptsJS/getTests.js"></script>
+<script src="./src/pages/portugalia_project/src/scriptsJS/content.js"></script>
+<script src="./src/pages/portugalia_project/src/scriptsJS/waitingRoom.js"></script>
+<script src="./src/pages/portugalia_project/src/scriptsJS/userConn.js"></script>
+<script src="./src/pages/portugalia_project/src/scriptsJS/footer.js"></script>
+
+<script>
+
+/////////////////////////////////////
+///////////WAITING ROOM//////////////
+/////////////////////////////////////
+
+
+async function lounchWaitingRoom(immediately = true) {
+    
+    let waitingMode = asa.getCookie("waitingMode") ?? 0;
+    let waitForOthers = asa.getCookie("waitForOthers") ?? 0;
+    
+    let wRoomStatus = waitingMode ? waitingMode : waitForOthers;
+    if (waitingMode != 1 && waitForOthers != 1) {
+        wRoomStatus = await checkForWaitingMode();
+    }
+    if (wRoomStatus == false) return false;
+    
+    const wRoom = new WaitingRoom();
+    await wRoom.createSession();
+    await wRoom.getSessionState();
+
+    async function launchStartQuiz(){
+        let wRoomSent = await wRoom.startQuiz();
+        if (wRoomSent) {
+            await launchContent(false);
+            //location.reload();
+        }
+        clearInterval(sessionInterval);
+    }
+    wRoom.displayWaitingRoom(launchStartQuiz);
+    let sessionInterval = setInterval(
+        function() {
+            wRoom.getSessionState();
+            wRoom.displayWaitingRoom(launchStartQuiz);
+        }
+    ,1000)
+    
+    
+
+    if (immediately) {
+        //showWaitnigRoom();
+        await showScrollAnimation("wRoom");
+    }else {
+        await showScrollAnimation("wRoom");
+    }
+
+    await genQuestions();
+    return true;
+
+}
+
+/////////////////////////////////////
+/////////END OF WAITING ROOM/////////
+/////////////////////////////////////
+
+/////////////////////////////////////
+//////////////TETS PART//////////////
+/////////////////////////////////////
+
+    async function showQuestion() {
+        const form = new QuestionManipulation();
+        const quizStatus = await form.requestQuestion();
+        // we can get false if now is waiting mode
+        if (quizStatus == false) return false;
+
+        let aSelected = form.showSelectedAnswer();
+        let qState = form.displayQuestion();
+        // to nie działa, ponieważ nie jest funkcją asynchroniczną
+        if (qState?.warning == "overTime") {
+            sendResultImmidiatly();
+            return false;
+        }
+        if (aSelected) {
+            form.selectAnswerAuto();
+        }
+
+        // #imgs
+        form.displayImg();
+
+        // // #show authors
+        // const authorReviewBtn = $(".authorReviewBtn");
+        // authorReviewBtn.off("click");
+        // authorReviewBtn.on("click", function(){
+        //     console.log(form)
+        //     updateAuthorReview(form);
+        // })
+
+        return form;
+    }
+
+
+    async function launchDisplayingQuestion(goButton) {
+        freeAnswersLocalStorage();
+        const quizForm = await showQuestion();
+        if (quizForm == false) return false;
+
+        quizForm.overMaxBtn(goButton);
+
+        return quizForm;
+    }
+
+
+    async function launchContent(immediately = true) {
+
+        let btn = $(".goNextBtn");
+
+        await genQuestions();
+        
+        //default state
+        let respForm = await launchDisplayingQuestion(btn);
+        
+        if (respForm == false) return false;
+
+        let resultForm = new ResultManipulation();
+        await launchResultRoom(resultForm);
+
+
+        // here is the button that display the next question
+        btn.on("click", ()=>{
+            (async function () {
+                const sendResult = await resultForm.sendResult();
+                if (sendResult) {
+                    launchResultRoom(resultForm);
+                }
+                const responseStatus = await respForm.sendAnswer();
+                if (responseStatus) {
+                    // dinamic state
+                    respForm = await launchDisplayingQuestion(btn);
+
+                    respForm.displaySelectedQuestion();
+                }
+            })();
+        });
+
+
+        // here are the buttons to switch the questions on 1,2,3,4...
+        respForm.launchQuestionSelector((el)=>{
+            (async function () {
+                respForm = await launchDisplayingQuestion(btn);
+                highlightQuestionOption(el);
+            })()
+        });
+        respForm.displaySelectedQuestion();
+        displayQuestionSelector();
+
+        let respCont;
+        if (immediately) {
+            //if we load quiz immediately it's probably means, 
+            //that we are already logged in
+            respCont = showQuiz();
+        }
+        else {
+            respCont = await showScrollAnimation("quiz");
+        }
+
+
+        launchFooter();
+
+
+        /////// #show Authors///////
+        const authorReviewBtn = $(".authorReviewBtn");
+        const authorReview = $(".authorReview");
+        window.addEventListener("click", function(e){
+            let jEl = $(e.target);
+            if (jEl.closest(authorReview)[0] == authorReview[0] || jEl[0] == authorReviewBtn[0]) {
+                launchAuthorReview(respForm);
+            }else {
+                authorReview.hide();
+            }
+            
+        })
+
+    }
+
+/////////////////////////////////////
+///////////END OF TEST PART//////////
+/////////////////////////////////////
+
+
+/////////////////////////////////////
+////////////RESULT ROOM//////////////
+/////////////////////////////////////
+
+async function launchResultRoom(resultData) {
+    let respResult = await resultData.getResult();
+    if (respResult != false) showResult();
+    else return false;
+    resultData.displayResult();
+    
+}
+
+
+//added 03.03.22
+async function sendResultImmidiatly(){
+    let resultForm = new ResultManipulation();
+    const sendResult = await resultForm.sendResult({"noAsk":true, "immediately": true});
+    if (sendResult) {
+        launchResultRoom(resultForm);
+    }
+}
+
+/////////////////////////////////////
+/////////END OF RESULT ROOM//////////
+/////////////////////////////////////
+
+/////////////////////////////////////
+////////////GENERAL PART/////////////
+/////////////////////////////////////
+
+function freeAnswersLocalStorage() {
+    localStorage.removeItem("myAnswer");
+    localStorage.removeItem("newTimer");
+}
+function freeQuizLocalStorage() {
+    freeAnswersLocalStorage();
+    turnOffTimer();
+    localStorage.removeItem("answersPositionHistory");
+}
+
+
+/////////////////////////////////////
+/////////END OF GENERAL PART/////////
+/////////////////////////////////////
+
+/////////////////////////////////////
+//////////MAIN APP PART//////////////
+/////////////////////////////////////
+
+
+    async function App() {
+
+        //asa.rmCookie("testID");
+
+        //USER VERIFICATION
+        const myConn = await userValidate();
+        if (myConn) {
+            const wRoomStatus = await lounchWaitingRoom();
+            if (wRoomStatus == false) {
+                const quizStatus = await launchContent();
+            }
+            return;
+        }else {  
+            showMainHall();
+            freeQuizLocalStorage();
+        }
+        
+        //SHOW TEST
+        //when user has been verified, it will show questions
+        const joinUserBtn = $(".joinUser");
+        joinUserBtn.on("click", ()=>{
+            (async function(){
+                let checkedUser = await checkUser();
+                if (checkedUser != false) {
+                    const wRoomStatus = await lounchWaitingRoom(false);
+                    if (wRoomStatus == false) {
+                        const quizStatus = await launchContent(false);
+                    }
+                }
+            })()
+        });
+    }
+
+/////////////////////////////////////
+///////////END OF APP PART///////////
+/////////////////////////////////////
+
+
+    App();
+    
+
+</script>
+
+<!-- END OF SCRIPT PART -->
+
+</body>
+</html>

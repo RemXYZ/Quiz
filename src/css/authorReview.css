@@ -1,0 +1,18 @@
+.authorReview {
+    position: absolute;
+    display: inline-block;
+    display: none;
+    padding: 10px 30px;
+
+    background: rgb(240, 240, 240);
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 0.5rem;
+
+    font-family: var(--Fsora); 
+
+    z-index: 10000;
+}
+
+.imgHeader {
+    font-weight: bold;
+}

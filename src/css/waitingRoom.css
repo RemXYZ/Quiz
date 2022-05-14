@@ -1,0 +1,166 @@
+/* :root {
+    --Cmain:#4b4b4b;
+    --CmainDarker: #3f3f3f;
+
+    --BGmain:#d5ddf0;
+    
+    --BCform:rgb(200, 213, 219);
+
+    --BGfooter: #c9d0e0;
+} */
+/* ///////////////////////////////// */
+/* //////////////GENERAL//////////// */
+/* ///////////////////////////////// */
+:root {
+    --BGmainDarker:#788CB4;
+    --BGwaitingRoom: var(--BGmainDarker);
+    --BGheader: #6e83ad;
+    --BGwRoomfooter: #667dac;
+
+    --Cmain: #ffffff;
+    --Cfooter: #ffffff;
+    --CLinkfooter: #ffffff;
+}
+/* ///////////////////////////////// */
+/* ///////////////////////////////// */
+/* ///////////////////////////////// */
+
+
+
+
+.waitingRoom {
+    display: none;
+    position: relative;
+    grid-template-rows: auto 1fr auto;
+    background: var(--BGmainDarker);
+    height: 100%;
+}
+
+.waitingRoomH {
+    background: var(--BGheader);
+    padding: 10px 0;
+}
+
+.waitingRoomH_text {
+    /* color: rgba(236, 236, 236, 0.692); */
+    color: var(--Cmain);
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+/* ////////////CONTENT////////////// */
+:root {
+    --circleSize:350px;
+    --circleDifference:20%;
+    
+    --BGcircle1:#6b83b6;
+    --BDcircle1:#9eb9f0;
+
+    --BGcircle2:#5975ad;
+    --BDcircle2:#6f91d6;
+    --Ccircle:rgb(255, 255, 255);
+
+    /* /////INACTIVE CIRCLE////// */
+    --BGcircle1_INACTIVE:#5c74a3;
+    --BDcircle1_INACTIVE:#637db1;
+
+    --BGcircle2_INACTIVE:#6d7fa3;
+    --BDcircle2_INACTIVE:#798db4;
+    --Ccircle:#c0bebe;
+
+    /* ////ACTIVE CIRCLE//// */
+    --BGcircle1_ACTIVE:#7189b9;
+    --BDcircle1_ACTIVE:#7f9dd8;
+
+    --BGcircle2_ACTIVE:#8296be;
+    --BDcircle2_ACTIVE:#9dadce;
+    --CcircleActive:#f6f6f6;
+}
+
+
+.waitingRoomContent {
+    align-self: center;
+}
+.waitingRoomContentBox {
+    display: grid;
+    top:30%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color:var(--Cmain);
+}
+
+.wRSB_Circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: var(--circleSize);
+    height: var(--circleSize);
+    margin: 5px 0;
+
+    background: var(--BGcircle1_INACTIVE);
+    border: 7px solid var(--BDcircle1_INACTIVE);
+    
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 200ms;
+}
+
+.wRSB_Circle:hover {
+
+    margin: calc(5px - 3px) 0;
+    width: calc(var(--circleSize) + 6px);
+    height: calc(var(--circleSize) + 6px);
+}
+
+.wRSB_Circle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(var(--circleSize) - var(--circleDifference));
+    height: calc(var(--circleSize) - var(--circleDifference));
+
+    background: var(--BGcircle2_INACTIVE);
+    border: 5px solid var(--BDcircle2_INACTIVE);
+    border-radius: 50%;
+
+    color: var(--Ccircle);
+
+    transition: 300ms;
+}
+
+.wRSB_Circle_active{
+    background: var(--BGcircle1_ACTIVE);
+    border: 7px solid var(--BDcircle1_ACTIVE);
+}
+.wRSB_Circle2_active{
+    background: var(--BGcircle2_ACTIVE);
+    border: 5px solid var(--BDcircle2_ACTIVE);
+    color: var(--CcircleActive) !important;
+}
+
+
+.wRoomFooter {
+    padding-top: 20px;
+    background: var(--BGwRoomfooter);
+    color: var(--Cfooter);
+}
+.wRoomFooter a {
+    color: var(--BGWRoomfooter);
+}
+
+/* ///////////////////////////////// */
+/* /////////END OF CONTENT////////// */
+/* ///////////////////////////////// */
+

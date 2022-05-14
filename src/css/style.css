@@ -1,0 +1,425 @@
+:root {
+    /* ////GENERAL ROOT////// */
+    --BGwhite: rgb(255, 255, 255, 0.8);
+
+    --darkFC: #313131;
+    --FCdark: #313131;
+    --FCdarkLight: #474747;
+    --Fsora: 'Sora', sans-serif;
+
+    /* //////header////// */
+
+    --FSheader: 36px;
+
+    /* ////////header end//////// */
+
+}
+
+/* 
+DONGLE: https://fonts.google.com/specimen/Dongle#standard-styles
+font-family: 'Dongle', sans-serif;
+
+SORA: https://fonts.google.com/specimen/Sora
+font-family: 'Sora', sans-serif; 
+
+Secular One: https://fonts.google.com/specimen/Secular+One?preview.size=41&subset=latin-ext
+font-family: 'Secular One', sans-serif;
+
+Paytone One: https://fonts.google.com/specimen/Paytone+One?preview.size=41&subset=latin-ext
+font-family: 'Paytone One', sans-serif;
+
+*/
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+
+.root {
+    display: none;
+    /* background-image: url("https://image.shutterstock.com/image-photo/british-shorthair-kitten-silver-color-260nw-1510641710.jpg");
+    */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover !important;
+    background: #EBEBEB;
+    height: 100vh;
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////HEADER////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////// */
+
+
+.testsHeader {
+    display: flex;
+    height: 13%;
+    min-height: 90px;
+    background: var(--BGwhite);
+    justify-content: center;
+    align-items: center;
+}
+.testsH {
+    color: var(--darkFC);
+
+    font-family: 'Secular One', sans-serif;
+    
+    font-style: normal;
+    font-weight: normal;
+
+    font-size: var(--FSheader);
+    white-space: 10px;
+    line-height: 1;
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////HEADER END////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////// */
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////content1//////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////// */
+
+:root {
+    /* height is based on image height  */
+    --imgMinHeight: 280px;
+    --selectQuestionArrowSize: 10px;
+}
+
+.tests_imageBox {
+    height: 39%;
+    min-height: var(--imgMinHeight);
+    /* min-height: 420px; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: minmax(var(--imgMinHeight),100%);
+}
+
+.testsImageFrame {
+    height: 100%;
+    display: inline-block;
+}
+
+.testsImage {
+    display: block;
+    margin: 0 auto;
+    /* width: 400px; */
+    height: 100%;
+
+    transition: 300ms;
+}
+
+
+.tests_numberBox {
+    text-align: right;
+}
+
+.tests_timer, .tests_number {
+    position: relative;
+    display: inline-block;
+    background: var(--BGwhite);
+    margin: 0px 30px;
+    padding: 20px 23px;
+    padding-top: 0;
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+
+    color: var(--FCdarkLight);
+    text-align: center;
+    font-family: var(--Fsora); 
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(var(--FSheader) - 6px);
+}
+.tests_timer {
+    color: #616161;
+}
+.tests_number{
+    padding-bottom: calc(20px + 5px);
+}
+
+.questionSelectorTable {
+    margin: auto auto;
+}
+.questionSelector {
+    margin-top: 2px;
+
+    color: var(--FCdarkLight);
+    font-family: var(--Fsora); 
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(var(--FSheader) - 17px);
+}
+.questionSelector td {
+    border: 1px solid #000;
+    border-radius: 0.7rem;
+    padding: 1px 4px;
+    margin-bottom: 2px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.questionOptionRow {
+    display: none;
+}
+.questionSelector .firstQuestionOption {
+    display: table-cell;
+}
+
+.openQuestionSelector {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0);
+
+    cursor: pointer;
+}
+.openQuestionSelectorDown {
+    border: var(--selectQuestionArrowSize) solid transparent; 
+    border-top: var(--selectQuestionArrowSize) solid rgb(88, 88, 88);
+}
+.openQuestionSelectorUp {
+    border: var(--selectQuestionArrowSize) solid transparent; 
+    border-top: 0;
+    border-bottom: var(--selectQuestionArrowSize) solid rgb(88, 88, 88);
+    bottom: 10px;
+}
+
+.activeSelectedQuestion {
+    background: #f2f5f6;
+    color: #4197d1;
+    border: 2px solid #3e93cc !important;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////END content1////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////// */
+
+/* //////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////ontent2////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////// */
+
+/* .answersBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0px 1fr 1fr;
+}
+
+.goNext {
+    position: relative;
+    grid-column: 1/3;
+    grid-row:1/2;
+    
+}
+
+.goNextBtn {
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    left: 50%;
+    top: 100%;
+} */
+main {
+    background: var(--BGwhite);
+    padding: 20px 0;
+}
+
+.answersBox {
+    height: 35vh;
+    min-height: 260px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 0 1fr;
+    grid-template-rows: repeat(2, minmax(80px, 1fr));
+    grid-gap: 20px 0px;
+}
+
+
+/* //////////////////////ANSWERS///////////////////////// */
+:root {
+    --answerCircleSize: 45px;
+    --Cactive: rgb(87, 11, 11);
+    --Cactive: rgb(40, 46, 42);
+}
+
+.answerL {
+    grid-column: 1/2;
+    text-align: right;
+    justify-content: right;
+
+    margin-right: 10px;
+}
+.answerR {
+    /* display: grid; */
+    grid-column: 2/4;
+
+    margin-right: 10px;
+}
+/* .answerR > .answerCircle {
+    grid-row:1/2;
+} */
+
+
+.answer {
+    display: flex;
+    align-items: center;
+    background: rgb(70, 70, 70);
+    padding: 25px 30px;
+    border-radius: 19px;
+    margin-left: 10px;
+    /* height: 160px; */
+
+    font-family: var(--Fsora);
+    color: #fff;
+    font-weight: bold;
+    font-size: 38px;
+
+    cursor: pointer;
+
+    
+}
+
+/* .answer:hover {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+} */
+
+.answerCircle {
+    margin: 0 20px;
+    background: #fff;
+    width:  var(--answerCircleSize);
+    height: var(--answerCircleSize);
+
+    text-align: center;
+    line-height: 2;
+
+    border-radius: 50%;
+    color: var(--darkFC);
+    font-size: 24px;
+
+    transition: 300ms;
+}
+
+.answerCircleActive {
+    position: relative;
+    background: rgb(146, 146, 146);
+    color: var(--Cactive);
+    background: var(--Cactive);
+    border: 10px solid rgb(255, 255, 255);
+    font-size: 0px !important;
+}
+/* .answerCircleActive::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    border: calc(var(--answerCircleSize) - 2%) solid rgb(255, 255, 255);
+    outline: calc(var(--answerCircleSize) - 20%) solid red;
+    background: rgb(45, 70, 4);
+
+    border-radius: 50%;
+} */
+
+/* .answer:hover .answerCircle {
+    width: calc(45px - 4px);
+    height: calc(45px - 4px);
+    margin: 0 calc(20px + 2px);
+    font-size: 23px;
+} */
+
+/* ///////answerButton/////// */
+
+.goNext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    grid-column: 2/2;
+}
+
+.goNextWrapper {
+    background: #fff;
+    padding: 18px 20px;
+    border-radius: 19px;
+}
+
+
+.goNextBtn {
+    display: block;
+    background: #828282;
+    color: white;
+
+    width: 150px;
+    height: 65px;
+    border: none;
+    border-radius: 15px;
+
+    font-family: var(--Fsora);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+
+    cursor: pointer;
+
+    transition: 300ms;
+}
+
+.goNextBtn:hover {
+    width: calc(150px + 4px);
+    height: calc(65px + 4px);
+}
+
+.goNextBtn:hover .goNextWrapper {
+    padding: 0 0 ;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////END content2///////////////////////// */
+/* //////////////////////////////////////////////////////////////////////// */
+
+/* //////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////FOOTER/////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////// */
+
+:root {
+    --FCdarkerFooter: #626262;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+
+    background: var(--BGwhite);
+
+    color: #A2A2A2;
+
+    font-family: var(--Fsora);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+}
+
+footer a, footer span {
+    color: var(--FCdarkerFooter);
+}
+/* //////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////FOOTER END/////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////// */
+

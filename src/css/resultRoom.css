@@ -1,0 +1,39 @@
+.resultRoom {
+    display: none;
+    background: var(--BGwaitingRoom);
+
+    height: 100%;
+}
+.resultFrame {
+    display: inline-block;
+    position: relative;
+    left:50%;
+    top:30%;
+    transform: translate(-50%,-30%);
+
+    text-align: center;
+}
+
+.fullPoints {
+    color: var(--Cmain);
+    font-family: var(--Fsora);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+}
+.logoutBtn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #7799dd;
+    border: 1px solid #5f7dbb;
+    border-radius: 0.5rem;
+
+    color: var(--Cmain);
+    font-family: var(--Fsora);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+
+    cursor: pointer;
+}
